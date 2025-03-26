@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Integrated Platform Environment leverages advanced machine learning models to understand, analyze, and resolve incidents in real time. This technology can improve efficiency, reduce downtime, and provide accurate resolutions to complex problems by utilizing historical data, knowledge bases, and telemetry from various systems..
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -24,16 +24,32 @@ A brief overview of your project and its purpose. Mention which problem statemen
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Below are the problem in current incident management process :
+
+Automating Incident Detection: Monitoring system telemetry and identifying potential issues.
+
+Suggesting Resolutions: Using knowledge bases, historical data, and real-time analysis to propose fixes.
+
+Ticket Management: Automatically generating and managing incident tickets.
+
+Cross-Platform Integration: Seamlessly interacting with existing tools (Jira, Confluence, BigPanda, ServiceNow) to streamline the incident resolution process.
+
+These will be effectively addressed by our solution
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+It analyzes the system telemetry (such as logs, metrics, and traces) to detect anomalies, understand the nature of incidents, and suggest or automate resolutions. By integrating with tools like Big Panda, Jira, Confluence,  it can generate and manage tickets, ensuring the incident is tracked through its lifecycle
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+
+We used pretrianed model "microsoft/DialoGPT-medium" from Huggingface and trained the model on Incident specific dataset, logs, configuration items
+
+Tools and Technologies Used:
+Generative AI Platforms: Hugging Face
+Softwares: Python, VS Code, React
+
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Faced challenges with proper data set and data quality, also faced challenges with model training and tuning ,as these process require lot of computing power and our personal laptops does not have this power.
 
 ## 🏃 How to Run
 1. Clone the repository  
@@ -43,18 +59,26 @@ Describe the major technical or non-technical challenges your team encountered.
 2. Install dependencies  
    ```sh
    npm install  # or pip install -r requirements.txt (for Python)
+
+   pip install fastapi uvicorn
+   pip install torch
+   pip install transformers
+   pip install datasets 
    ```
 3. Run the project  
    ```sh
    npm start  # or python app.py
    ```
 
+
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
+- 🔹 Frontend: React
+- 🔹 Backend: FastAPI , Python
 - 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Other: HuggingFace
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Prasad Koduri** - [GitHub](#) | [LinkedIn](#)
+- **Sitaram Garlapati** - [GitHub](#) | [LinkedIn](#)
+- **Suresh Kadam** - [GitHub](#) | [LinkedIn](#)
+- **Ramana Venkata** - [GitHub](#) | [LinkedIn](#)
